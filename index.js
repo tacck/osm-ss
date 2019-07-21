@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
 
     const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
-    await page.goto('https://osm.t88.jp/map/17/43.068/141.35', {waitUntil: 'networkidle'});
+    await page.goto('https://osm.t88.jp/map/17/43.068/141.35', {waitUntil: 'networkidle2'});
     // Type our query into the search bar
     // await page.type('test');
 
