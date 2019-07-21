@@ -2,9 +2,6 @@
   "engines": {
     "node": "10.x"
   },
-  "scripts": {
-    "start": "node app.js"
-  },
   "dependencies": {
     "puppeteer": "^1.18.1"
   }
