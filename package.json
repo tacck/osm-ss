@@ -1,8 +1,9 @@
 {
   "engines": {
-    "node": "10.x"
+    "node": "12.x"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "puppeteer": "^1.18.1"
   }
 }
