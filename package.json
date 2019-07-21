@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "10.x"
+  },
   "dependencies": {
     "puppeteer": "^1.18.1"
   }
