@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
 
+app.get('/', function (req, res) {
+  res.send('{}');
+})
+
 app.get('/:zoom/:lat/:lon', function (req, res) {
   const puppeteer = require('puppeteer');
   (async() => {
