@@ -8,10 +8,13 @@ app.get('/', function (req, res) {
     const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
     await page.goto('https://osm.t88.jp/map/17/43.068/141.35', {waitUntil: 'networkidle2'});
+    console.log(__dirname);
     await page.screenshot({path: 'ss.png'});
 
     browser.close();
-    res.sendFile('ss.png');
+    res.sendFile('ss.png', {
+      root: __dirname
+    });
   })();
 })
 
