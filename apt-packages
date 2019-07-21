@@ -1,1 +1,11 @@
 libx11-xcb1
+libxcomposite1
+libappindicator1
+gconf-service
+libasound2
+libgconf-2-4
+libnspr4
+libxss1
+fonts-liberation
+libnss3
+xdg-utils
